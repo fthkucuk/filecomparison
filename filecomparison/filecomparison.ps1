@@ -37,7 +37,7 @@ try {
                 $fileInf = $Filepath.FullName
                 $stream = ([IO.StreamReader]"$fileInf").BaseStream
                 -join ($MD5.ComputeHash($stream) |
-                    ForEach { "{0:x2}" -f $_ })
+                    ForEach-Object { "{0:x2}" -f $_ })
                 $stream.Close()
             }
             if ($hashes.Count -gt 0) {                               
