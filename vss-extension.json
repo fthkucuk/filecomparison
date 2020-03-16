@@ -9,7 +9,7 @@
         {
             "id": "Microsoft.VisualStudio.Services"
         }
-    ],    
+    ],
     "description": "Deploying only different or new files.",
     "categories": [
         "Azure Pipelines"
@@ -25,7 +25,8 @@
     "content": {
         "details": {
             "path": "README.md"
-        },
+        }
+    },
     "contributions": [
         {
             "id": "filecomparison",
