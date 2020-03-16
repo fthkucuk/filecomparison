@@ -22,6 +22,10 @@
             "path": "filecomparison"
         }
     ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        },
     "contributions": [
         {
             "id": "filecomparison",
