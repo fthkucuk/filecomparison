@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "file-comparison",
     "name": "File Comparison",
-    "version": "0.1.2",
+    "version": "0.4.8",
     "publisher": "fthkucuk",
     "public": true,
     "targets": [
@@ -15,7 +15,7 @@
         "Azure Pipelines"
     ],
     "icons": {
-        "default": "images/filecomparison.png"
+        "default": "icon.png"
     },
     "files": [
         {

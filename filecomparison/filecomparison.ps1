@@ -18,14 +18,8 @@ try {
         Remove-Item -Recurse -Force -Path $tempPath\*
     }
 
-    $changeFilestxt = ""
-    $changeFiles = ""
-    $newFilestxt = ""
-    $newFiles = ""
-
     $getAllFiles = Get-ChildItem -Path $sourcePath -File -Recurse
  
-
     foreach ($file in $getAllFiles) {                     
 
         $childPath = $file.DirectoryName.Substring($file.DirectoryName.IndexOf($rootPath) + $rootPath.Length) 
@@ -73,6 +67,17 @@ try {
             Copy-Item -Path $file.FullName -Destination $realPath
         }
     }   
+
+    if (Test-Path $tempPath\newfiles.txt) {
+   
+        Remove-Item $tempPath\newfiles.txt
+    }
+
+    if (Test-Path $tempPath\changefiles.txt) {
+   
+        Remove-Item $tempPath\changefiles.txt
+    }
+
 }
 catch [Exception] {    
     Write-Error ($_.Exception.Message)
