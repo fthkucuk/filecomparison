@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "file-comparison",
     "name": "File Comparison",
-    "version": "0.5.0",
+    "version": "0.8.0",
     "publisher": "fthkucuk",
     "public": true,
     "targets": [
